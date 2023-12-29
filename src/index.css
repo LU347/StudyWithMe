@@ -8,37 +8,33 @@
   caret-color: transparent;
 }
 
-nav {
-  padding: 0.5rem;
-  width: 100%;
-  background: transparent;
+.buttons {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  backdrop-filter: blur(10px);
+  align-items: center;
 }
 
-nav h1 {
-  margin-right: auto;
+.buttons h1 {
   padding: 1rem;
-  pointer-events: none;
+  margin-right: auto;
+  font-size: 1rem;
+  width: fit-content;
 }
 
-nav button {
-  margin: 1rem;
-  width: 8rem;
-  height: 2.5rem;
+button {
+  margin: 0.25rem;
   color: black;
-  background-color: #fff;
-  border-color: #000000;
-  border-radius: 0.5rem;
-  font-family: "Silkscreen";
+  border-radius: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  image-rendering: crisp-edges;
 }
 
-nav button:hover {
-  background-color: #949494;
-  color: white;
+button:hover {
+  background-color: #949494 !important;
+  filter: invert(100%);
 }
 
 .video {
@@ -53,6 +49,25 @@ nav button:hover {
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+#shuffle-button {
+  background: url(./images/shuffle-button.png) no-repeat;
+  background-color: #fff;
+  background-size: 2rem;
+}
+
+#prev-button {
+  background: url(./images/left-chevron.png) no-repeat;
+  background-color: #fff;
+  background-size: 2rem;
+}
+
+#next-button {
+  background: url(./images/right-chevron.png) no-repeat;
+  background-color: #fff;
+  background-size: 2rem;
+  margin-right: 1rem;
 }
 
 
